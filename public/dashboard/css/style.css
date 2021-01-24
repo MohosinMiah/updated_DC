@@ -1,0 +1,9 @@
+/* Sidebar Background Style ******************************   */
+.bg-gradient-primary {
+    background-color: #009541;
+    background-image: linear-gradient(180deg,#009541 10%,#009541 100%);
+}
+
+.sidebar-brand-text{
+    color: #ffec00;
+}

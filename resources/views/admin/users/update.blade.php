@@ -35,6 +35,8 @@
 
         <div class="col-md-2"></div>
         <div class="col-md-8">
+          <h1 class="text-center">Update Seller</h1>
+
                   <!-- Content Row -->
             <div class="card">
                 <div class="card-body">

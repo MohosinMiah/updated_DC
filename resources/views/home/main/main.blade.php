@@ -60,16 +60,16 @@
       <div class="inner">
 
         <h3>Contact With Us</h3>
-         <h3><a href="tel:+01838986086"> <i class="fa fa-phone" aria-hidden="true"> </i> 
+         <h3><a href="tel:+01838986086" class="link_text"> <i class="fa fa-phone" aria-hidden="true"> </i> 
           01838-986086 </a>
          </h3>
 
-         <h3> <a href="mailto:query@discounta2z.com"><i class="fa fa-envelope" aria-hidden="true"></i>
+         <h3> <a href="mailto:query@discounta2z.com" class="link_text"><i class="fa fa-envelope" aria-hidden="true"></i>
           query@discounta2z.com</a> 
          </h3>
 
         <div class="copyright">
-          &copy;  <a href="https://www.discounta2z.com/">DiscountA2Z</a>  All Right Preserved 
+          &copy;  <a href="https://www.discounta2z.com/" class="link_text">DiscountA2Z</a>  All Right Preserved 
         </div>
 
       </div>

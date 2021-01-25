@@ -7,3 +7,34 @@
 .sidebar-brand-text{
     color: #ffec00;
 }
+
+
+
+
+/* Button Style **********************   */
+.btn-primary {
+
+	background-color: #009541;
+    border-color: #009541;
+    
+}
+
+.btn-primary:hover {
+
+	background-color: #009541;
+    border-color: #009541;
+
+}
+
+
+/* Footer Style  */
+.footer_link {
+    color: #009541;
+}
+.text-center {
+    color: #009541;
+}
+
+.footer_link:hover {
+    color: #009541;
+}

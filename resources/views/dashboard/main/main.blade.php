@@ -46,12 +46,7 @@
                           <td>{{$customer->phone}}</td>
                           <td>
                             <div class="action">
-
-                                       {{-- Check Seller or Not  --}}
-                             @if(Session::get('seller_is_login'))
                                 <a href="{{route('seller.customer_editseller_seller_edit',$customer->id)}}"><i class="fas fa-edit" data-toggle="tooltip" data-placement="top" title="customer Edit"></i></a>
-                             @endif
-                             
                                 <a href="{{route('seller.customer_viewseller_seller_show',$customer->id)}}" class="text-success"><i class="fas fa-eye" data-toggle="tooltip" data-placement="top" title="Seller View"></i></a>
                                 <a href="{{ route('seller.customer_destroyseller_seller_destroy',$customer->id) }}" onclick="return confirm('Are You Sure to Delete?')" class="text-warning"><i class="fas fa-trash-alt" data-toggle="tooltip" data-placement="top" title="Seller Delete"></i></a>
                             </div>

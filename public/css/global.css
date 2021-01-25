@@ -71,7 +71,7 @@ body{
 
 
 #footer .copyright a:hover {
-    color: #B98B1F;
+    color: #fff;
 }
 #footer .copyright a {
     color: rgba(255, 255, 255, 0.5);
@@ -96,6 +96,11 @@ body{
 
 .text_info{
     color: green;
+}
+
+
+.link_text:hover {
+    color: #fff;
 }
 
 

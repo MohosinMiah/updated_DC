@@ -2,7 +2,7 @@
  <footer class="sticky-footer bg-white">
     <div class="container my-auto">
         <div class="copyright text-center my-auto">
-            <strong> <a href="https://www.discounta2z.com/">DISCOUNTA2Z</a> &copy; All Right Researved.</strong>
+            <strong> <a href="https://www.discounta2z.com/" class="footer_link">DISCOUNTA2Z</a> &copy; All Right Researved.</strong>
         </div>
     </div>
 </footer>

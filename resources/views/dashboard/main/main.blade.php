@@ -29,9 +29,9 @@
                   <thead>
                       <tr>
                           <th>ID</th>
-                          <th>Name</th>
+                          <th class="mobile_colum_disbale">Name</th>
                           <th>Card No</th>
-                          <th>Phone</th>
+                          <th class="mobile_colum_disbale">Phone</th>
                           <th> Action </th>
                       </tr>
                   </thead>
@@ -41,9 +41,9 @@
                     
                       <tr>
                           <td>{{$customer->id}}</td>
-                          <td>{{$customer->name}}</td>
+                          <td class="mobile_colum_disbale">{{$customer->name}}</td>
                           <td>{{$customer->card_number}}</td>
-                          <td>{{$customer->phone}}</td>
+                          <td class="mobile_colum_disbale">{{$customer->phone}}</td>
                           <td>
                             <div class="action">
                                 <a href="{{route('seller.customer_editseller_seller_edit',$customer->id)}}"><i class="fas fa-edit" data-toggle="tooltip" data-placement="top" title="customer Edit"></i></a>
@@ -59,9 +59,9 @@
                   <tfoot>
                     <tr>
                         <th>ID</th>
-                          <th>Name</th>
+                          <th class="mobile_colum_disbale">Name</th>
                           <th>Card No</th>
-                          <th>Phone</th>
+                          <th class="mobile_colum_disbale">Phone</th>
                           <th> Action </th>
                     </tr>
                   </tfoot>

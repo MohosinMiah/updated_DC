@@ -97,7 +97,9 @@ Route::group(['prefix'=>'admins','as'=>'admin.'], function(){
     Route::get('/logout', ['as' => 'admin_logout', 'uses' => 'AdminController@logout'])->name('admin_logout');
 
 
+    // Reports Settings Route    **********************
 
+    Route::get('/reports', ['as' => 'report', 'uses' => 'AdminController@general_report'])->name('admin_report_general');
 
     
 

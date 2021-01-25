@@ -42,8 +42,8 @@
                   <tr>
                       <th>ID</th>
                       <th>Card NO</th>
-                      <th>Name</th>
-                      <th>Phone</th>
+                      <th class="mobile_colum_disbale">Name</th>
+                      <th class="mobile_colum_disbale">Phone</th>
                       <th> Action </th>
                   </tr>
               </thead>
@@ -54,8 +54,8 @@
                   <tr>
                       <td>{{$customer->id}}</td>
                       <td>{{$customer->card_number}}</td>
-                      <td>{{$customer->name}}</td>
-                      <td>{{$customer->phone}}</td>
+                      <td class="mobile_colum_disbale">{{$customer->name}}</td>
+                      <td class="mobile_colum_disbale">{{$customer->phone}}</td>
                       <td>
                         <div class="action">
 
@@ -83,9 +83,9 @@
               <tfoot>
                 <tr>
                     <th>ID</th>
-                    <th>Name</th>
+                    <th class="mobile_colum_disbale">Name</th>
                     <th>Card NO</th>
-                    <th>Phone</th>
+                    <th class="mobile_colum_disbale">Phone</th>
                     <th> Action </th>
                 </tr>
               </tfoot>

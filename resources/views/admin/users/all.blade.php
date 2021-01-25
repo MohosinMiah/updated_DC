@@ -37,10 +37,10 @@
               <thead>
                   <tr>
                       <th>ID</th>
-                      <th class="column_name">Name</th>
-                      <th class="column _name">Area Code</th>
+                      <th class="mobile_colum_disbale">Name</th>
+                      <th class="mobile_colum_disbale _name">Area Code</th>
                       <th>Phone</th>
-                      <th>Email </th>
+                      <th class="mobile_colum_disbale">Email </th>
                       <th> Action </th>
                   </tr>
               </thead>
@@ -50,10 +50,10 @@
                 
                   <tr>
                       <td>{{$seller->id}}</td>
-                      <td>{{$seller->name}}</td>
-                      <td>{{$seller->area_code}}</td>
+                      <td class="mobile_colum_disbale">{{$seller->name}}</td>
+                      <td class="mobile_colum_disbale">{{$seller->area_code}}</td>
                       <td>{{$seller->phone}}</td>
-                      <td>{{$seller->email}}</td>
+                      <td class="mobile_colum_disbale">{{$seller->email}}</td>
                       <td>
                           <div class="action">
                             <a href="{{route('admin.seller_editadmin_seller_edit',$seller->id)}}"><i class="fas fa-edit" data-toggle="tooltip" data-placement="top" title="Seller Edit"></i></a>
@@ -69,10 +69,10 @@
               <tfoot>
                 <tr>
                     <th>ID</th>
-                    <th>Name</th>
-                    <th>Area Code</th>
+                    <th class="mobile_colum_disbale">Name</th>
+                    <th class="mobile_colum_disbale">Area Code</th>
                     <th>Phone</th>
-                    <th>Email </th>
+                    <th class="mobile_colum_disbale">Email </th>
                     <th> Action </th>
                 </tr>
               </tfoot>

@@ -637,7 +637,7 @@ class SellerController extends Controller
    
 
         if(!$is_all_modify){
-            Session::flash('message', 'You Have No Right!'); 
+            Session::flash('message', 'Access Denied. You Have No Right!'); 
             return redirect()->back();
 
         }
@@ -678,7 +678,7 @@ class SellerController extends Controller
    
 
         if(!$is_all_modify){
-            Session::flash('message', 'You Have No Right!'); 
+            Session::flash('message', 'Access Denied. You Have No Right!'); 
             return redirect()->back();
 
         }
@@ -778,7 +778,7 @@ class SellerController extends Controller
 
 
     if(!$is_all_modify){
-        Session::flash('message', 'You Have No Right!'); 
+        Session::flash('message', 'Access Denied. You Have No Right!'); 
         return redirect()->back();
 
     }

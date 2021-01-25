@@ -74,8 +74,8 @@
             <li class="nav-item">
                 <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseSellers"
                     aria-expanded="true" aria-controls="collapseSellers">
-                    <i class="fas fa-fw fa-folder"></i>
-                    <span>Seller </span>
+                    <i class="fa fa-user" aria-hidden="true"></i>
+                      <span>Seller </span>
                 </a>
                 <div id="collapseSellers" class="collapse" aria-labelledby="headingPages" data-parent="#accordionSidebar">
                     <div class="bg-white py-2 collapse-inner rounded">
@@ -91,8 +91,8 @@
             <li class="nav-item">
                 <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseCustomers"
                     aria-expanded="true" aria-controls="collapseCustomers">
-                    <i class="fas fa-fw fa-folder"></i>
-                    <span>Customer </span>
+                    <i class="fa fa-user" aria-hidden="true"></i>
+                         <span>Customer </span>
                 </a>
                 <div id="collapseCustomers" class="collapse" aria-labelledby="headingPages" data-parent="#accordionSidebar">
                     <div class="bg-white py-2 collapse-inner rounded">
@@ -105,16 +105,33 @@
                     </div>
                 </div>
             </li>
-
+            
             {{--  Admin Setting   --}}
 
             @if(Session::get('admin_is_login')) 
 
+            {{-- General Setting  --}}
+            <li class="nav-item">
+                <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseReports"
+                    aria-expanded="true" aria-controls="collapseReports">
+                    <i class="fa fa-user" aria-hidden="true"></i>
+                         <span>Reports </span>
+                </a>
+                <div id="collapseReports" class="collapse" aria-labelledby="headingPages" data-parent="#accordionSidebar">
+                    <div class="bg-white py-2 collapse-inner rounded">
+
+                        <a class="collapse-item" href="{{ route('admin.reportadmin_report_general') }}">General</a>
+                        
+
+                    </div>
+                </div>
+            </li>
+
             <!-- Nav Item - Charts -->
             <li class="nav-item">
                 <a class="nav-link" href="{{ route('admin.admin_settingsadmin_settings') }}">
-                    <i class="fas fa-fw fa-chart-area"></i>
-                    <span>Settings</span></a>
+                    <i class="fa fa-cog" aria-hidden="true"></i>
+                        <span>Settings</span></a>
             </li>
 
             @endif
@@ -126,8 +143,8 @@
             <!-- Nav Item - Charts -->
             <li class="nav-item">
                 <a class="nav-link" href="{{ route('seller.seller_settingsseller_settings') }}">
-                    <i class="fas fa-fw fa-chart-area"></i>
-                    <span>Settings</span></a>
+                    <i class="fa fa-cog" aria-hidden="true"></i>
+                     <span>Settings</span></a>
             </li>
 
             @endif

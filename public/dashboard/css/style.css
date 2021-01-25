@@ -38,3 +38,11 @@
 .footer_link:hover {
     color: #009541;
 }
+
+/* Responsive For Mobile Device  */
+
+@media only screen and (max-width: 600px) {
+    .mobile_colum_disbale {
+        display: none;
+    }
+  }

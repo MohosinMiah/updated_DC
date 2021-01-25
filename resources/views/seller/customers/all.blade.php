@@ -35,6 +35,8 @@
 
         <div class="row">
             <div class="col-md-12">
+              <a class="btn btn-success" href="{{ route('seller.customer_createseller_seller_create') }}">Add New</a>
+
               <h1 class="text-center">All Customers</h1>
 
              <table id="example" class="display">

@@ -128,7 +128,20 @@ class SellerController extends Controller
                 return redirect()->route('home');
              }
              
-             $customers = Customer::orderBy('created_at', 'desc')->get();
+        
+        
+             $id = Session::get('seller_id');
+                      
+                    if(!$id){ 
+                        
+                        $customers = Customer::orderBy('created_at', 'desc')->get();
+    
+                    }else{
+    
+                        $customers = Customer::where('seller_id',$id)->orderBy('created_at', 'desc')->get();
+    
+                    }
+    
     
 
 

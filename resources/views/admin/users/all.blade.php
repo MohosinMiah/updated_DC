@@ -31,14 +31,15 @@
 
         <div class="row">
             <div class="col-md-12">
+              <a class="btn btn-success" href="{{ route('admin.seller_createadmin_seller_create') }}">Add New</a>
               <h1 class="text-center">All Sellers</h1>
-
+              
              <table id="example" class="display">
               <thead>
                   <tr>
                       <th>ID</th>
                       <th class="mobile_colum_disbale">Name</th>
-                      <th class="mobile_colum_disbale _name">Area Code</th>
+                      <th class="mobile_colum_disbale _name">Seller Code</th>
                       <th>Phone</th>
                       <th class="mobile_colum_disbale">Email </th>
                       <th> Action </th>
@@ -70,7 +71,7 @@
                 <tr>
                     <th>ID</th>
                     <th class="mobile_colum_disbale">Name</th>
-                    <th class="mobile_colum_disbale">Area Code</th>
+                    <th class="mobile_colum_disbale">Seller Code</th>
                     <th>Phone</th>
                     <th class="mobile_colum_disbale">Email </th>
                     <th> Action </th>

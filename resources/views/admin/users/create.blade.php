@@ -48,8 +48,8 @@
                   </div>
 
                   <div class="form-group">
-                    <label for="name">Area Code *</label>
-                    <input type="text" class="form-control" id="area_code" name="area_code" placeholder="Seller Area Code" required>
+                    <label for="name">Seller Code *</label>
+                    <input type="text" class="form-control" id="area_code" name="area_code" placeholder="Seller Seller Code" required>
                   </div>
 
                   <div class="form-group">

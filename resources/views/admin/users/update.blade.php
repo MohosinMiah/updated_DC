@@ -49,7 +49,7 @@
                   </div>
 
                   <div class="form-group">
-                    <label for="name">Area Code *</label>
+                    <label for="name">Seller Code *</label>
                     <input type="text" class="form-control" id="area_code" name="area_code" value="{{$seller->area_code}}"  required>
                   </div>
 

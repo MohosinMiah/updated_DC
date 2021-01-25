@@ -138,6 +138,9 @@ class AdminController extends Controller
             return redirect()->route('admin.loginadmin_login');
          }
 
+
+         
+
          $customers = Customer::orderBy('created_at', 'desc')->get();
 
 

@@ -1074,6 +1074,50 @@ public function change_phone(Request $request){
  }
   
 
+ 
+ function seller_report(){
+
+        // Admin Login Check 
+        if(!Session::get('admin_is_login')){   
+        return redirect()->route('admin.loginadmin_login');
+        }
+
+
+    $sellers = Seller::orderBy('created_at', 'desc')->get();
+
+
+
+    return view('admin.reports.seller_report',compact('sellers'));
+    
+ }
+
+
+
+ function seller_report_details($seller_id){
+    //  Admin Login Check 
+    if(!Session::get('admin_is_login')){   
+    return redirect()->route('admin.loginadmin_login');
+    }
+
+
+    $seller = Seller::where('id', $seller_id)->first();
+    $total_customers = Customer::where('seller_id',$seller_id)->count();
+
+    $customers = Customer::orderBy('created_at', 'desc')->get();
+
+    $data = [
+        'seller' => $seller,
+        'total_customers' => $total_customers,
+        'customers'  => $customers
+        
+    ];
+
+
+
+    return view('admin.reports.seller_report_details')->with('data',$data);
+
+
+ }
 
   /**
  *  ******************************************************************************************

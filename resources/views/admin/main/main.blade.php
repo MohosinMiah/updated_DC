@@ -30,7 +30,8 @@
    
       <div class="logo">
         <a href="/"> <img src="{{url('/images/discounta2z-logo.png')}}" alt="Discount Logo"> </a>
-        <span class="title_heading">Here There EveryWHere</span>
+        <div class="vertical_space"></div>
+        <span class="title_heading" >Here There EveryWHere</span>
       </div>
     
   </div>

@@ -100,6 +100,8 @@ Route::group(['prefix'=>'admins','as'=>'admin.'], function(){
     // Reports Settings Route    **********************
 
     Route::get('/reports', ['as' => 'report', 'uses' => 'AdminController@general_report'])->name('admin_report_general');
+    Route::get('/reports/sellers', ['as' => 'seller_report', 'uses' => 'AdminController@seller_report'])->name('admin_seller_report');
+    Route::get('/reports/seller/details/{id}', ['as' => 'seller_report_details', 'uses' => 'AdminController@seller_report_details'])->name('admin_seller_report_details');
 
     
 

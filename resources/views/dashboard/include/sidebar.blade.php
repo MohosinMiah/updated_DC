@@ -121,6 +121,7 @@
                     <div class="bg-white py-2 collapse-inner rounded">
 
                         <a class="collapse-item" href="{{ route('admin.reportadmin_report_general') }}">General</a>
+                        <a class="collapse-item" href="{{ route('admin.seller_reportadmin_seller_report') }}">Sellers</a>
                         
 
                     </div>

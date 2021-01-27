@@ -20,25 +20,51 @@
 
   {{-- Header Section  --}}
 
-<div class="jumbotron text-center top-header">
-  <h1>DISCOUNT A2Z</h1>
-  <p>Here There EveryWhere</p> 
+<div class="container-fluid">
+  <div class="row top-header">
 
-  <div class="logo">
-   <a href="/"> <img src="{{url('/images/discounta2z-logo.png')}}" alt="Discount Logo"> </a>
+
+  <div class="col-md-1"></div>
+
+  <div class="col-md-10">
+   
+      <div class="logo">
+        <a href="/"> <img src="{{url('/images/discounta2z-logo.png')}}" alt="Discount Logo"> </a>
+        <span class="title_heading" >Here There Every Where</span>
+      </div>
+    
   </div>
-
-  <div class="notice">
-    <h3><marquee>Welcome to DISCOUNT A2Z. Admin says "Next 20 days we fixed a target that we increase our consumer number upto 2000."</marquee></h3>
-
-  </div>
+  <div class="col-md-1"></div>
 
 </div>
+
+</div>
+
   
 {{-- Main Body  --}}
 
 @yield('main_body')
 
+<br>
+
+<div class="container">
+{{-- Display Error Message  --}}
+<div class="row">
+  <div class="col-md-1"></div>
+  <div class="col-md-10 rules_regulation">
+
+    <h3> Rules and Regulation:  <h3>
+     
+      <ul class="list-group list-group-flush">
+        <li class="list-group-item">DISCOUNT A2Z does't share data with third-party.</li>
+        <li class="list-group-item">Data security is our prime concern.</li>
+      </ul>
+   
+  </div>
+  <div class="col-md-1"></div>
+</div>
+
+</div>
 
 {{-- Footer Section  --}}
 
@@ -46,7 +72,7 @@
   <div class="row">
     <div class="col-sm-12 col-md-12">
 
-      <p><strong>All Right Preserved &copy;<a href="#" class="copy_right_link"> DISCOUNT A2Z </a></strong></p>
+      <p><strong>&copy;<a href="https://www.discounta2z.com/" target="__blank" class="copy_right_link"> DISCOUNT A2Z </a>, All Rights Reserved</strong></p>
     </div>
 
   </div>

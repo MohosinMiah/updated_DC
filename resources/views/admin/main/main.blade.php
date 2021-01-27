@@ -30,8 +30,7 @@
    
       <div class="logo">
         <a href="/"> <img src="{{url('/images/discounta2z-logo.png')}}" alt="Discount Logo"> </a>
-        <div class="vertical_space"></div>
-        <span class="title_heading" >Here There EveryWHere</span>
+        <span class="title_heading" >Here There Every Where</span>
       </div>
     
   </div>
@@ -51,27 +50,18 @@
 <div class="container">
 {{-- Display Error Message  --}}
 <div class="row">
-  <div class="col-md-12">
+  <div class="col-md-1"></div>
+  <div class="col-md-10 rules_regulation" >
+
     <h3> Rules and Regulation:  <h3>
-      <div class="card">
-        <div class="card-body">
-          DISCOUNT A2Z does't share data with third-party.
-        </div>
-      </div>
-   
-      <div class="card">
-        <div class="card-body">
-          Data security is our prime concern.
-        </div>
-      </div>
-   
-      <div class="card">
-        <div class="card-body">
-          You have all rights to delete your data.
-        </div>
-      </div>
+     
+      <ul class="list-group list-group-flush">
+        <li class="list-group-item">DISCOUNT A2Z does't share data with third-party.</li>
+        <li class="list-group-item">Data security is our prime concern.</li>
+      </ul>
    
   </div>
+  <div class="col-md-1"></div>
 </div>
 
 </div>
@@ -82,7 +72,7 @@
   <div class="row">
     <div class="col-sm-12 col-md-12">
 
-      <p><strong>All Rights Reserved &copy;<a href="#" class="copy_right_link"> DISCOUNT A2Z </a></strong></p>
+      <p><strong>&copy;<a href="https://www.discounta2z.com/" target="__blank" class="copy_right_link"> DISCOUNT A2Z </a>, All Rights Reserved</strong></p>
     </div>
 
   </div>

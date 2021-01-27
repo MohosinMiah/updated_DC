@@ -8,28 +8,31 @@
     {{-- Main  Section  --}}
 
 <div class="container">
-  <div class="row ">
-    <div class="col-md-2"></div>
- {{-- Display Error Message  --}}
+
+   {{-- Display Error Message  --}}
  <div class="row">
   <div class="col-md-12">
-
+       <br>
      {{-- Display Error Message  --}}
     @include('seller.error.error')
   
   </div>
 </div>
-    <div class="col-md-8 center_div">
+
+
+  <div class="row ">
+    <div class="col-md-1"></div>
+    <div class="col-md-10">
       <form class="form-horizontal border_class" method="POST" action="{{ route('seller.loginseller_login_post' ) }}">
           @csrf
           <div class="form-group">
-              <label for="phone">Phone Number &nbsp; <i class="fa fa-mobile" aria-hidden="true" style="font-size: 20px;color:green"></i>  </label> 
+              <label for="phone">Phone Number &nbsp; </label> 
                 
                <input type="tel" pattern=".{11}" class="form-control" name="phone" id="phone" placeholder="Your Phone Number" oninput="check(this)" required>
             </div>
   
             <div class="form-group">
-              <label for="password">Password &nbsp; <i class="fa fa-key" aria-hidden="true" style="font-size: 20px;color:green"></i>  </label> 
+              <label for="password">Password &nbsp;  </label> 
                 
                <input type="password" class="form-control" name="password" id="password" placeholder="Password"  required>
             </div>
@@ -40,7 +43,7 @@
     
     </div>
 
-    <div class="col-md-2"></div>
+    <div class="col-md-1"></div>
 
 
   </div>

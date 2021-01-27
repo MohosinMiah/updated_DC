@@ -20,8 +20,8 @@
           </div>
           
     <div class="row ">
-      <div class="col-md-2"></div>
-      <div class="col-md-8 center_div">
+      <div class="col-md-1"></div>
+      <div class="col-md-10">
         <form class="form-horizontal border_class" method="POST" action="{{ route('admin.otpadmin_send_otp') }}">
             @csrf
             <div class="form-group">
@@ -39,7 +39,7 @@
       
       </div>
   
-      <div class="col-md-2"></div>
+      <div class="col-md-1"></div>
 
 
     </div>

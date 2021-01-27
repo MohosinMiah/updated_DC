@@ -18,6 +18,14 @@ body{
 
 
 
+.copy_right_link {
+    color:#fff;
+    text-decoration: none !important;
+}
+
+.copy_right_link:hover {
+    color:#fff
+}
 
 .link_style {
     text-decoration: none;
@@ -56,14 +64,20 @@ body{
     width: 100%;
     background-color: #009541;
     color: white;
-    padding-top: 20px;
-    padding-bottom: 20px;
+  
+    padding-top: 30px;
+    padding-bottom: 14px;
     text-align: center;
      
 }
 
+.rules_regulation {
+    margin: 0px 17px;
+  
+   }
+   
 #footer {
-	padding: 6em 0;
+
 	background: #009541;
 	color: #fff;
 	text-align: center;

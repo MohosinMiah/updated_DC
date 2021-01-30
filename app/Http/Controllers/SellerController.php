@@ -346,6 +346,11 @@ class SellerController extends Controller
 
     }
 
+
+    /**
+     * Sending SMS 
+     */
+
     public function sendSms($number,$code){
   
 
@@ -857,6 +862,9 @@ class SellerController extends Controller
  * *******************************************************************************************
  */
 
+ /**
+  * 
+  */
 
  public function seller_settings(){
 

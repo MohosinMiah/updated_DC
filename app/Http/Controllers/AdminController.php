@@ -586,7 +586,9 @@ class AdminController extends Controller
 
     }
 
-
+/**
+ * Display All Seller
+ */
 
     public function all(){
         
@@ -607,7 +609,7 @@ class AdminController extends Controller
 
 
     /**
-     * Show the form for editing the specified resource.
+     * Show the form for editing the specific seller
      *
      * @param  \App\Admin  $admin
      * @return \Illuminate\Http\Response
@@ -629,7 +631,7 @@ class AdminController extends Controller
 
 
     /**
-     * Update the specified resource in storage.
+     * Update the specified seller  in storage.
      *
      * @param  \Illuminate\Http\Request  $request
      * @param  \App\Admin  $admin
@@ -707,7 +709,7 @@ class AdminController extends Controller
     }
 
   /**
-     * Display the specified resource.
+     * Display the specified seller resource.
      *
      * @param  \App\Admin  $admin
      * @return \Illuminate\Http\Response
@@ -731,7 +733,7 @@ class AdminController extends Controller
 
 
     /**
-     * Remove the specified resource from storage.
+     * Remove the specified seller resource from storage.
      *
      * @param  \App\Admin  $admin
      * @return \Illuminate\Http\Response
@@ -779,7 +781,9 @@ class AdminController extends Controller
  * ******************************** Admin Settings Implementation  END ************
  * *******************************************************************************************
  */
-
+/**
+ * Admin Logout
+ */
 
  public function logout(){
 
@@ -806,6 +810,10 @@ class AdminController extends Controller
      
  }
 
+ /**
+  * Admin Setting Options
+  */
+
  public function admin_settings(){
      
          // Admin Login Check 
@@ -831,6 +839,7 @@ class AdminController extends Controller
  * Admin Info Update ******************************************************************
  * 
  */
+
 
 
 public function info(Request $request){
@@ -1060,6 +1069,10 @@ public function change_phone(Request $request){
  * *******************************************************************************************
  */
 
+/**
+ * General Reports 
+ */
+
  function general_report(){
 
     $total_sellers = Seller::count();
@@ -1074,6 +1087,9 @@ public function change_phone(Request $request){
  }
   
 
+ /**
+  * Seller Reports 
+  */
  
  function seller_report(){
 
@@ -1092,6 +1108,9 @@ public function change_phone(Request $request){
  }
 
 
+  /**
+  * Seller Reports , Admin able to check how many customers created by a particular seller and more
+  */
 
  function seller_report_details($seller_id){
     //  Admin Login Check 
@@ -1101,9 +1120,12 @@ public function change_phone(Request $request){
 
 
     $seller = Seller::where('id', $seller_id)->first();
+
     $total_customers = Customer::where('seller_id',$seller_id)->count();
 
-    $customers = Customer::orderBy('created_at', 'desc')->get();
+    $customers = Customer::where('seller_id',$seller_id)->orderBy('created_at', 'desc')->get();
+
+
 
     $data = [
         'seller' => $seller,

@@ -21,7 +21,7 @@ class CreateCustomersTable extends Migration
             $table->string('gender');
             $table->string('otp')->nullable();
             $table->text('address')->nullable();
-            $table->integer('seller_id');
+            $table->text('seller_id');
             $table->timestamps();
         });
     }

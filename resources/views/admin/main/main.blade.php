@@ -4,7 +4,8 @@
   <title>DISCOUNT A2Z - @yield('title')</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-
+    <!--favicon -->
+    <link rel="icon" href="http://seller.discounta2z.com/images/dashboard.png" type="image/gif" sizes="16x16">
   {{-- Style Files *************************    --}}
 
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">

@@ -319,9 +319,10 @@ class SellerController extends Controller
 
                 // var_dump(Session::get('phone'));
                 //       die();
-                
 
-                $this->sendSms($request->phone,$code);
+                $message ="From DISCOUNT A2Z OPT code =  ".$code;
+
+                $this->sendSms($request->phone,$message);
 
 
                 return redirect()->route('seller.send_otpseller_otp');
@@ -351,7 +352,7 @@ class SellerController extends Controller
      * Sending SMS 
      */
 
-    public function sendSms($number,$code){
+    public function sendSms($number,$message){
   
 
         // Twilio::message('8801816073636', $code);
@@ -365,13 +366,13 @@ class SellerController extends Controller
         // $text="Hello Dear, Customer . Your OPT  Code ".$code;
 
         
-        $text="From DISCOUNT A2Z OPT code =  ".$code;
+       
         $data= array(
         'username'=>"01857126452",
         'password'=>"2RVXW48F",
         // 
         'number'=>"$number",
-        'message'=>"$text"
+        'message'=>"$message"
         );
 
 
@@ -525,6 +526,8 @@ class SellerController extends Controller
                 'address' => 'required',
             ]);
 
+         
+
                     // Store Data In Valriables
 
                     $card_number = $request->card_number;
@@ -538,7 +541,12 @@ class SellerController extends Controller
                     $address = $request->address;
 
                     $id = Session::get('seller_id');
-                  
+                   
+                   
+                    // Congratulation Message 
+                     $congratulations = 'Congrulations '.$name.' Your Account Activated Successfully.Visit discounta2z.com for more offer';
+
+
                     if(!$id){ 
 
                   
@@ -589,6 +597,8 @@ class SellerController extends Controller
 
         // Check Seller Created Successfully or not
         if($customers){
+
+            $this->sendSms($phone,$congratulations);
 
             Session::flash('class_success', 'success '); 
             Session::flash('message', 'Seller Created Successfuly!'); 
